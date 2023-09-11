@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="CSS/all.min.css">
+  <link rel="stylesheet" href="CSS/normalize.css">
+  <link rel="stylesheet" href="CSS/master.css">
+
+  <!-- Google fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+
+  <title>Tip calculator app</title>
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="logo">
+      <img src="images/logo.svg" alt="logo" class="logo">
+    </div>
+
+    <div class="container">
+      <div class="cont">
+
+        <form class="filing">
+          <div class="bill-in">
+            <label for="bill">Bill</label>
+            <input type="number" id="bill" placeholder="0">
+            <img src="images/icon-dollar.svg" class="dollar" alt="dollar">
+          </div>
+
+          <div class="select-tip">
+            <p class="tip-per">Select Tip %</p>
+
+            <div class="options">
+              <div class="5 opt" data-tech="5">5%</div>
+              <div class="10 opt" data-tech="10">10%</div>
+              <div class="15 opt" data-tech="15">15%</div>
+              <div class="25 opt" data-tech="25">25%</div>
+              <div class="50 opt" data-tech="50">50%</div>
+              <div class="custom">Custom</div>
+              <input type="number" name="" id="after-custom">
+            </div>
+
+          </div>
+
+          <div class="no-of-people">
+
+            <label for="no" class="number-label">Number of People</label>
+            <input type="number" id="no" placeholder="0">
+            <p class="error">Can't be zero</p>
+
+            <img src="images/icon-person.svg" alt="person" class="person">
+          </div>
+        </form>
+
+
+
+        <div class="output">
+
+          <div class="upper">
+            <div class="amount">
+              <div class="left">
+                <p class="tip-amount">Tip Amount</p>
+                <span class="tip-amount">/ person</span>
+              </div>
+              <div class="right">
+                <span class="js-amount">$0.00</span>
+              </div>
+            </div>
+
+            <div class="total">
+              <div class="left">
+                <p class="total">Total</p>
+                <span class="total">/ person</span>
+              </div>
+              <div class="right">
+
+                <span class="js-total">$0.00</span>
+              </div>
+            </div>
+          </div>
+
+          <button class="reset">Reset</button>
+
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+
+
+  <!-- <footer>
+    <div class="attribution">
+      Coded by <a href="#">Mahmoud Amin</a>.
+    </div>
+  </footer> -->
+  <script src="main.js"></script>
+</body>
+
+</html>
